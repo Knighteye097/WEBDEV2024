@@ -1,0 +1,28 @@
+/* Write your code here: */
+
+/*Group Selector Combining*/
+h1, h2{
+    color: blueviolet;
+}
+
+/*Child selector combining*/
+.box > p {
+    color :firebrick;
+}
+
+/*Descendant Selector*/
+.box li{
+    color: blue;
+}
+
+/*Chaining Selector*/
+li.done{
+    color: seagreen;
+}
+
+/*Example of combining the above selectors to
+make one user selector, I will be combining
+the Child and the chaining.*/
+ul > p.done{
+    font-size: 0.5rem;;
+}
