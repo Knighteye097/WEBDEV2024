@@ -1,0 +1,147 @@
+body{
+    background-color: beige;
+}
+
+div#page {
+    display: flex;
+    flex-direction: column;
+}
+
+div#Controls-Bar {
+    background-color: black;
+    height: 50px;
+    position: relative;
+    margin: 20px 30px;
+    border-radius: 50px;
+}
+
+img#Logo_Image {
+    position: absolute;
+    height: 20px;
+    top: 12px;
+    left: 15px;
+}
+
+p#Home_Button {
+    position: absolute;
+    color: white;
+    right: 775px;
+}
+
+p#About_Button {
+    position: absolute;
+    color: white;
+    left: 500px;
+}
+
+p#Service_Button {
+    position: absolute;
+    color: white;
+    left: 605px;
+}
+
+div#Search_Bar {
+    position: absolute;
+    background-color: white;
+    height: 37px;
+    width: 285px;
+    left: 725px;
+    top: 6px;
+    border-radius: 20px;
+}
+
+div#Contact_Bar {
+    background-color: darkorange;
+    position: absolute;
+    right: 20px;
+    height: 37px;
+    top: 6px;
+    border-radius: 20px;
+    width: 112px;
+}
+
+p#Contact_Text {
+    position: absolute;
+    left: 21px;
+    bottom: -6px;
+}
+
+p#Search_Text {
+    position: absolute;
+    left: 20px;
+    top: -6px;
+    color: grey;
+}
+
+div#Heading {
+    position: relative;
+    left: 35px;
+    font-size: 1.5rem;
+    top: -8px;
+}
+
+span#Bold_Text {
+    font-style: italic;
+    color: midnightblue;
+}
+
+div#Container {
+    display: flex;
+    flex-direction: row;
+}
+
+div#Left-Container {
+    width: 45%;
+    margin: 0px 35px 0px 35px;
+}
+
+img#Beauty_Image {
+    height: 200px;
+    float: left;
+    border-radius: 20px;
+    margin-right: 15px;
+    width: 300px;
+}
+
+p#Beauty_Para {
+    text-align: justify;
+}
+
+div#Right-Container {
+    width: 45%;
+}
+
+img#Construction_Image {
+    height: 200px;
+    float: left;
+    border-radius: 20px;
+    margin-right: 15px;
+    width: 300px;
+}
+
+p#Construction_Para {
+    text-align: justify;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    color: midnightblue;
+    font-size: 1.2rem;
+}
+
+.comic-neue-regular {
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+h2#Beauty_Heading {
+    font-weight: bolder;
+}
+
+h2#Construction_Heading{
+    font-weight: bolder;
+}

@@ -1,0 +1,67 @@
+.container-flex {
+    display: flex;
+    align-items: flex-start;
+}
+.fixed-card-container {
+    flex: 0 0 auto;
+    margin-right: 1rem; 
+}
+.card.fixed-card.mb-4 {
+    height: 440px;
+}
+.scrollable-card-container {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.scrollable-row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.scrollable-row .card {
+    flex: 0 0 auto;
+    width: 250px; /* Set a fixed width for the cards */
+    margin-right: 1rem;
+    height: 400px;
+}
+
+.create-edit-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.hide{
+    display:none;
+}
+
+.modal-size{
+    height: 570px;
+}
+
+.dimCard{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+body{
+    background-color: black;
+}  
+
+.satisfy-regular {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.fontColor {
+    color: goldenrod;
+} 
