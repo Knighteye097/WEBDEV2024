@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My Portfolio</title>
+        <!-- Link for Bootstrap -->
+        <link 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+            rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+            crossorigin="anonymous"
+        />
+        <!-- Font Linkin -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+        
+        <!-- Link for external stylesheet -->
+        <link rel="stylesheet" href="./Styles/style.css">
+    </head>
+
+    <body class="gradient-background-content">
+        <!-- Navigation Bar -->
+        <section id="Navbar" class=" gradient-background">
+            <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong shadow-sm p-3 mb-5 rounded" aria-label="Thirteenth navbar example">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+          
+                  <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+                    <ul class="navbar-nav col-lg-9">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#About" style="color: #FEFFD2;">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Skills" style="color: #FEFFD2;">Skills</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Footer" style="color: #FEFFD2;">Contact</a>
+                      </li>
+                    </ul>
+                    <div class="d-lg-flex col-lg-3 justify-content-end">
+                        <form role="search">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="background-color: #D4F1F4;">
+                        </form>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </section>
+
+        <!-- Introduction Section -->
+        <section id="Intro" class="gradient-background">
+            <div class="container">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                  <img src="./Assets/Images/Bio_Image.jpg" class="d-block mx-lg-auto img-fluid" alt="Portfolio Bio Image" width="350" height="350" loading="lazy"
+                  style="border-radius: 50%;">
+                </div>
+                <div class="col-lg-6">
+                  <h1 class="display-5 lh-1 mb-3" style="color: white;">Myself <span class="fw-bold" style="color: #FEFFD2;">Satyam Mishra</span></h1>
+                  <p class="lead" style="color: white;">Java Full Stack Developer</p>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-outline-light btn-lg px-4 me-md-2 fw-bold"><a class="nav-link" href="#Footer">Contact Me</a></button>
+                  </div>
+                </div>
+              </div>
+             </div> 
+        </section>
+
+        <!-- About Section -->
+        <section id="About" style="background-color: whitesmoke;">
+            <div class="p-5">
+                <div class="container text-left py-5">
+                  <h1 style="color: #7BAFB5">About</h1>
+                  <p class="col-lg-12 lead" style="text-align: justify;">
+                    I have accumulated two years of hands-on experience with the Java Spring Boot framework, primarily focusing on a CPQ application 
+                    for a leading business partner in the healthcare industry. Initially, I spearheaded the development of the Pricing component of 
+                    the application. Over time, my responsibilities expanded to encompass all three components of the application. I took the lead in 
+                    developing several of the most complex functionalities, resulting in significant reductions in lag within the pricing component. 
+                    Additionally, I was tasked with rebuilding the translation functionality for the application. This initiative successfully 
+                    broadened the application's reach to various parts of the world. Apart from this throughout my 2 yrs journey, I have also earned 
+                    various unofficial tags like "The Fun Manager", "The local SPOC", "The choreographer" and many more!!
+                  </p>
+                </div>
+              </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="Skills">
+            <div class="container">
+                <div class="Skills py-5">
+                    <div class="SkillsHeading text-center lead">
+                        <h2 class="section_HeadingSetting">Skills</h2>
+                        <hr />
+                    </div>
+                    <div class="ButtonsDiv">
+                        <div class="row">
+                            <div class="col-lg-3 d-grid gap-2 d-md-flex justify-content-md-center pt-5">
+                                <button type="button" class="btn btn-outline-light btn-lg px-4 me-md-2 fw-bold button_tiles">
+                                    <div class="flexColumn">
+                                        <img src="./Assets/Images/java-programming-language-icon.svg" alt="Java Logo" height="100px">
+                                        <p class="mb-0">Java</p>
+                                        <div class="stars">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col-lg-3 d-grid gap-2 d-md-flex justify-content-md-center pt-5">
+                                <button type="button" class="btn btn-outline-light btn-lg px-4 me-md-2 fw-bold button_tiles">
+                                    <div class="flexColumn">
+                                        <img src="./Assets/Images/html-icon.svg" alt="HTML Logo" height="100px">
+                                        <p class="mb-0">Html</p>
+                                        <div class="stars">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                        </div>
+                                    </div>   
+                                </button>
+                            </div>
+                            <div class="col-lg-3 d-grid gap-2 d-md-flex justify-content-md-center pt-5">
+                                <button type="button" class="btn btn-outline-light btn-lg px-4 me-md-2 fw-bold button_tiles">
+                                    <div class="flexColumn">
+                                        <img src="./Assets/Images/css-icon.svg" alt="CSS Logo" height="100px">
+                                        <p class="mb-0">CSS</p>
+                                        <div class="stars">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                            <img src="./Assets/Images/star-half.svg" alt="Star" height="15px">
+                                        </div>
+                                    </div>    
+                                </button>
+                            </div>
+                            <div class="col-lg-3 d-grid gap-2 d-md-flex justify-content-md-center pt-5">
+                                <button type="button" class="btn btn-outline-light btn-lg px-4 me-md-2 fw-bold button_tiles">
+                                    <div class="flexColumn">
+                                        <img src="./Assets/Images/aws-icon.svg" alt="AWS Logo" height="100px">
+                                        <p class="mb-0">AWS</p>
+                                        <div class="stars">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                            <img src="./Assets/Images/star-half.svg" alt="Star" height="15px">
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col-lg-3 d-grid gap-2 d-md-flex justify-content-md-center pt-5">
+                                <button type="button" class="btn btn-outline-light btn-lg px-4 me-md-2 fw-bold button_tiles">
+                                    <div class="flexColumn">
+                                        <img src="./Assets/Images/postgresql-icon.svg" alt="PostgreSQL Logo" height="100px">
+                                        <p class="mb-0">PostgreSQL</p>
+                                        <div class="stars">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col-lg-3 d-grid gap-2 d-md-flex justify-content-md-center pt-5">
+                                <button type="button" class="btn btn-outline-light btn-lg px-4 me-md-2 fw-bold button_tiles">
+                                    <div class="flexColumn">
+                                        <img src="./Assets/Images/c-plus-plus-programming-language-icon.svg" alt="C++ Logo" height="100px">
+                                        <p class="mb-0">C++</p>
+                                        <div class="stars">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                        </div>
+                                    </div>    
+                                </button>
+                            </div>
+                            <div class="col-lg-3 d-grid gap-2 d-md-flex justify-content-md-center pt-5">
+                                <button type="button" class="btn btn-outline-light btn-lg px-4 me-md-2 fw-bold button_tiles">
+                                    <div class="flexColumn">
+                                        <img src="./Assets/Images/unreal-engine-svgrepo-com.svg" alt="Unreal Engine Logo" height="100px">
+                                        <p class="mb-0">Unreal Engine</p>
+                                        <div class="stars">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                            <img src="./Assets/Images/star-half.svg" alt="Star" height="15px">
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col-lg-3 d-grid gap-2 d-md-flex justify-content-md-center pt-5">
+                                <button type="button" class="btn btn-outline-light btn-lg px-4 me-md-2 fw-bold button_tiles">
+                                    <div class="flexColumn">
+                                        <img src="./Assets/Images/unity-game-engine-icon.svg" alt="Unity Engine Logo" height="100px">
+                                        <p class="mb-0">Unity Engine</p>
+                                        <div class="stars">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                            <img src="./Assets/Images/star-fill.svg" alt="Star" height="15px">
+                                            <img src="./Assets/Images/star-half.svg" alt="Star" height="15px">
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="Projects">
+            <div class="container">
+                <div class="ProjectContainer py-5">
+                    <div class="ProjectsHeading text-center lead">
+                        <h2 class="section_HeadingSetting">Projects</h2>
+                    </div>
+                    
+                    <!-- START THE FEATURETTES -->
+
+                    <hr class="featurette-divider">
+
+                    <div class="row featurette">
+                    <div class="col-lg-6 col-sm-12 text-sm-left">
+                        <h2 class="featurette-heading fw-normal lh-1 contentHeading_FontSetting">KnowledgeEmbedded AI ChatBot, <span class="text-body-secondary">It’ll blow your mind.</span></h2>
+                        <p class="lead content_fontSetting">Created a AI chatbot, the bot was well trained in the business specific knowledge using a concept
+                            called as KnowledgeBase Embedding and Vectorization.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 text-sm-center">
+                        <img src="./Assets/Images/ChatBot.png" alt="ChatBot Project Image" height="300" width="500">
+                    </div>
+                    </div>
+
+                    <hr class="featurette-divider">
+
+                    <div class="row featurette">
+                    <div class="col-lg-6 col-sm-12 text-sm-left text-lg-end order-lg-2">
+                        <h2 class="featurette-heading fw-normal lh-1 contentHeading_FontSetting">First Person Shooter Demo Game, <span class="text-body-secondary">See for yourself.</span></h2>
+                        <p class="lead content_fontSetting">Developed a first-person shooting game. Mainly to understand raycasting and some more first-person game technicalities also came to learn a bit about destructible objects in a game.</p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 text-sm-center order-lg-1">
+                        <img src="./Assets/Images/FirstPersonShooterDemo.png" alt="FirstPersonShooterDemo Project Image" height="300" width="500">   
+                    </div>
+                    </div>
+
+                    <hr class="featurette-divider">
+
+                    <div class="row featurette">
+                    <div class="col-lg-6 col-sm-12 text-sm-left">
+                        <h2 class="featurette-heading fw-normal lh-1 contentHeading_FontSetting">Jumping Game Demo</h2>
+                        <p class="lead content_fontSetting">Developed a simple 2D jumping game to understand the functionality of gravity created using a character controller and to better understand the functionality of physics in a game environment</p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 text-sm-center">
+                        <img src="./Assets/Images/JumpingGameDemo.png" alt="JumpingGameDemo Project Image" height="300" width="500">
+                    </div>
+                    </div>
+
+                    <hr class="featurette-divider">
+
+                    <div class="row featurette">
+                        <div class="col-lg-6 col-sm-12 text-sm-left text-lg-end order-lg-2">
+                            <h2 class="featurette-heading fw-normal lh-1 contentHeading_FontSetting">Login Microservice</h2>
+                            <p class="lead content_fontSetting">Developed a login microservice for providing user functionality in a better way in an online application. Using Spring Boot and Postgre SQL as a Database.</p>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 text-sm-center order-lg-1">
+                            <img src="./Assets/Images/LoginMicroservice.png" alt="LoginMicroservice Project Image" height="300" width="500">
+                        </div>
+                    </div>
+
+
+                    <hr class="featurette-divider">
+
+                    <div class="row featurette">
+                        <div class="col-lg-6 col-sm-12 text-sm-left">
+                            <h2 class="featurette-heading fw-normal lh-1 contentHeading_FontSetting">And lastly, this one Space Shooter 2D game, <span class="text-body-secondary">Checkmate.</span></h2>
+                            <p class="lead content_fontSetting">Developed a 2D game on Unity using C# which helped me to learn a lot of unity concepts.</p>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 text-sm-center">
+                            <img src="./Assets/Images/SpaceShooter2D.png" alt="SpaceShooter2D Project Image" height="300" width="500">    
+                        </div>
+                        </div> 
+                        
+                    <hr class="featurette-divider">    
+
+                    <!-- /END THE FEATURETTES -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="Experience">
+            <div class="container px-4 py-5" id="hanging-icons">
+                <h2 class="pb-2 section_HeadingSetting">Work Experience</h2>
+                <hr />
+                <div class="row g-4 row-cols-1 row-cols-lg-3">
+                  <div class="col-lg-12 d-flex align-items-start">
+                    <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                      <img src="./Assets/Images/capgemini-201x-logo.svg" alt="Capgemini Logo" height="55px" width="60px">
+                    </div>
+                    <div>
+                      <h3 class="fs-2 contentHeading_FontSetting">Associate Consultant @Capgemini</h3>
+                      <p class = "experienceSummaryFont">Developed, continuously improved, and managed a CPQ Sales Tool Software on a
+                        global scale.</p>
+                        <h4 class="contentHeading_FontSetting">Learnings:</h4>
+                        <li class="Learnings">Software Development</li>
+                        <li class="Learnings">Java</li>
+                        <li class="Learnings">PostgreSQL</li>
+                        <li class="Learnings">Hibernate</li>
+                        <li class="Learnings">Spring Boot</li>
+                        <li class="Learnings">AWS</li>
+                        <li class="Learnings">Html & CSS</li>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 d-flex align-items-start">
+                    <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <img src="./Assets/Images/octro.png" alt="Octro Logo" height="30px" width="60px">
+                    </div>
+                    <div>
+                      <h3 class="fs-2 contentHeading_FontSetting">Intern @Octro Inc.</h3>
+                      <p class = "experienceSummaryFont">Worked on handling requests on mobile gaming application, and network
+                        management.
+                      </p>
+                        <h4 class="contentHeading_FontSetting">Learnings:</h4>
+                        <li class="Learnings">Wireshark</li>
+                        <li class="Learnings">XML Parsing</li>
+                        <li class="Learnings">Python</li>
+                        <li class="Learnings">Multiprocessing</li>
+                        <li class="Learnings">Multithreading</li>
+                  </div>
+                  </div>
+                  <div class="col-lg-12 d-flex align-items-start">
+                    <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <img src="./Assets/Images/Codules.jpg" alt="Capgemini Logo" height="40px" width="60px">
+                    </div>
+                    <div>
+                      <h3 class="fs-2 contentHeading_FontSetting">Intern @Codules Pvt. Ltd.</h3>
+                      <p class = "experienceSummaryFont">Developed a Java standalone app for managing inventories.</p>
+                        <h4 class="contentHeading_FontSetting">Learnings:</h4>
+                        <li class="Learnings">Core JAVA</li>
+                        <li class="Learnings">OOPs with JAVA</li>
+                        <li class="Learnings">NetBeans</li>
+                        <li class="Learnings">Exception Handling</li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <!-- Recognition Section -->
+        <section id="Recognition">
+            <div class="container px-4 py-5" id="featured-3">
+                <h2 class="pb-2 section_HeadingSetting">Awards & Volunteer Experience</h2>
+                <hr />
+                <div class="row g-4 pt-2 row-cols-1 row-cols-lg-3">
+                  <div class="feature col">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-transparent fs-2 mb-3">
+                      <img src="./Assets/Images/award-fill.svg" alt="Award Icon Image" height="40">
+                    </div>
+                    <h3 class="fs-2 contentHeading_FontSetting">Delivery Star</h3>
+                    <p class="experienceSummaryFont">Delivery Star for Capgemini in the year 2023</p>
+                  </div>
+                  <div class="feature col">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-transparent fs-2 mb-3">
+                        <img src="./Assets/Images/person-raised-hand.svg" alt="Volunteer Icon Image" height="40">
+                    </div>
+                    <h3 class="fs-2 contentHeading_FontSetting">Food Bank Volunteer</h3>
+                    <p class="experienceSummaryFont">Volunteer for Food Management for a temple in Sitapur, UP, India.<br />
+                    Since 2016
+                    </p>
+                    </div>
+                  <div class="feature col">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-transparent fs-2 mb-3">
+                        <img src="./Assets/Images/person-raised-hand.svg" alt="Volunteer Icon Image" height="40">
+                    </div>
+                    <h3 class="fs-2 contentHeading_FontSetting">TechBlitz, Event Coordinator</h3>
+                    <p class="experienceSummaryFont">Orgainised and lead a Technical Event from the front during my sophomore.     
+                    </p>
+                    </div>
+                </div>
+              </div>
+        </section>
+
+        <!-- Footer Section -->
+        <section id="Footer">
+                <div class="ContactMe-Heading">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <hr style="border-color: white;"/>
+                        </div>
+                        <div class="col-lg-2 text-center contentHeading_FontSetting">
+                            <h2>Contact Me</h2>
+                        </div>
+                        <div class="col-lg-5">
+                            <hr style="border-color: white;"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="ContactMe-Content">
+                    <div class="row pb-5">
+                        <div class="col-lg-12 text-center pt-5">
+                            <button class="btn btn-outline-light px-3 Button_Width" type="button">
+                                <a class="nav-link" href="mailTo:satyamkkh@gmail.com">
+                                <img src="./Assets/Images/envelope-at.svg" alt="Mail Icon" >
+                                satyamkkh@gmail.com
+                                </a>
+                            </button>
+                        </div>
+                        <div class="col-lg-12 pt-5 text-center">
+                            <button class="btn btn-outline-light px-3 Button_Width" type="button">
+                                <img src="./Assets/Images/geo-alt.svg" alt="Location Icon" >
+                                Bangalore, India
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="FooterSection">
+                    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top">
+                        <div class="col-md-4 d-flex align-items-center">
+                          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                          </a>
+                          <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Satyam Mishra</span>
+                        </div>
+
+                        <div class="col-md-4 text-center contentHeading_FontSetting">
+                            <h2 class="satisfy-regular">"Thanks For Scrolling"</h2>
+                        </div>
+                    
+                        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex pe-2">
+                          <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/satyam-mishra-b87b89192/"><img src="./Assets/Images/linkedin.svg" alt="LinkedIn Icon" height="20"></a></li>
+                          <li class="ms-3"><a class="text-body-secondary" href="https://github.com/Knighteye097"><img src="./Assets/Images/github.svg" alt="Github Icon" height="20"></a></li>
+                        </ul>
+                      </footer>
+                </div>
+        </section>
+
+        <!-- Script for Bootstrap -->
+        <script 
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+            crossorigin="anonymous">
+        </script>
+    </body>
+</html>

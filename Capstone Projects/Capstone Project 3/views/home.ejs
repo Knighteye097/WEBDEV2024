@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My blog website</title>
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet"   
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+        crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/homepage_style.css">
+</head>
+
+<body>
+    <section id="NavigationBar">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-secondary"></span>
+              </button>
+      
+              <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+                <h2 class="col-lg-3 me-0 satisfy-regular fontColor">Noobda</h2>
+                <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+                  <li class="nav-item">
+                    <a class="nav-link fontColor" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fontColor" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fontColor" href="#">Contact</a>
+                  </li>
+                </ul>
+                <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+                  <button class="btn btn-outline-warning" id="create-new-blog">Create New Blog</button>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </section>  
+
+    <section id="topJumbotron">
+        <div class="container my-5">
+          <div class="row justify-content-center">
+            <div class="p-5 col-sm-12 text-center bg-body-secondary rounded-3 editable">
+              <h2 class="text-body-emphasis" id="editBlogTitle"><%= blogList[blogList.length-1].title %></h2>
+              <p class="lead pt-2" id="editBlogContent">
+                <%= blogList[blogList.length-1].content %>
+              </p>
+              <p class="text-center pt-1 mb-0" id="editBlogAuthor"><%= blogList[blogList.length-1].author %></p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class = "create-edit-form hide">
+      <div class="modal modal-sheet position-static d-block modal-size" role="dialog" id="modalSheet">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-4 shadow">
+            <div class="modal-header border-bottom-0">
+              <h1 class="modal-title fs-5">Create blog</h1>
+            </div>
+            <div id="form">
+              <form action="/create" method="POST">
+                <div class="form-floating mb-3 px-3">
+                  <input type="text" class="form-control" id="blogTitle" name="title">
+                  <label for="blogTitle">Title</label>
+                </div>
+                <div class="form-floating mb-3 px-3">
+                  <textarea type="text" class="form-control" id="blogContent" name="content" rows="3" style="height: 200px;"></textarea>
+                  <label for="blogContent">Content</label>
+                </div>
+                <div class="form-floating mb-3 px-3">
+                  <input type="text" class="form-control" id="blogAuthor" name="author">
+                  <label for="blogAuthor">Author</label>
+                </div>
+                <div class="modal-footer d-flex justify-content-between align-items-center pb-3 border-top-0">
+                  <button type="submit" formaction="/delete" class="btn btn-lg btn-danger">
+                    <img src="images/trash.svg" alt="Trash Icon" width="16" height="16">
+                  </button>
+                  <div>
+                      <button class="btn btn-lg btn-outline-warning satisfy-regular" id="SaveButton" type="submit">Save</button>
+                      <button class="btn btn-lg btn-outline-danger ms-2 satisfy-regular" data-bs-dismiss="modal" id="DiscardButton" type="reset">Discard</button>
+                  </div>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="content">
+        <div class="container mt-5 d-lg-flex p-0">
+            <!-- Fixed Card Container -->
+            <div class="fixed-card-container col-lg-3 me-0 me-lg-3">
+              <div class="card fixed-card mb-4 bg-body-secondary">
+                <div class="card-header satisfy-regular">
+                  All Blogs
+                </div>
+                <div class="card-body">
+                  <!-- Content for the fixed card -->
+                  <p>Want to learn html, css and js. Congrats you are on the right platform, Hope this platform will help you like it helped me
+                    in becoming a beginner in frontend, just start scrolling and read. Happy Learning!!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Dynamic Cards Container -->
+            <div class="scrollable-card-container">
+              <div class="scrollable-row">
+                <% blogList.forEach(blog => { %>
+                  <div class="card mb-4 editable bg-body-secondary">
+                    <div class="card-header" id="editBlogTitle"><%= blog.title %></div>
+                    <div class="card-body" id="editBlogContent">
+                      <p><%= blog.content %></p>
+                    </div>
+                    <div class="card-footer">
+                      <p class="text-end" id="editBlogAuthor">-<%= blog.author %></p>
+                    </div>
+                  </div>
+                <% }); %>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section id="footer">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <div class="col-md-4 d-flex align-items-center ps-5">
+                <span class="mb-3 mb-md-0 text-white">© 2024 Noobda, Inc</span>
+              </div>
+
+              <div class="col-md-4 text-center">
+                <h2 class="satisfy-regular fontColor">"Thank you for Visiting"</h2>
+              </div>
+          
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex pe-5">
+                <li class="ms-3"><a class="text-body-secondary" href="#">
+                    <img src="images/github.svg" alt="Github Icon" height="25" width="25">
+                </a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#">
+                    <img src="images/linkedin.svg" alt="LinkedIn Icon" height="25" width="25">
+                </a></li>
+              </ul>
+            </footer>
+    </section>
+
+
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+        crossorigin="anonymous">
+    </script>
+    <script 
+      src="https://code.jquery.com/jquery-3.7.1.min.js" 
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+      crossorigin="anonymous">
+    </script>
+    <script src="scripts/homepage-events.js" charset="utf-8"></script>
+</body>
+</html>
