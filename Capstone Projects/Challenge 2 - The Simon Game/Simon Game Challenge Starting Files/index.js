@@ -75,7 +75,7 @@ The event handler is for user, as soon as the user presses any button in UI and 
 started this method will start working. Basically, we are playing the audio and playing the
 animation for the button which user has clicked in the UI.
 
-Also we are checking the last pressed button by user against the game patter and if the user
+Also we are checking the last pressed button by user against the game pattern and if the user
 has given the correct game pattern then we are moving on the next level by calling the nextSequence()
 method by the delay of 1.25secs.
 */

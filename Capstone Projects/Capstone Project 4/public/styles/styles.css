@@ -1,0 +1,48 @@
+#mainPage {
+    display: flex;
+    flex-direction: column;
+}
+
+#gameArea {
+    display: flex;
+    justify-content: space-around;
+}
+
+#footerArea {
+    margin-top: 10px;
+}
+
+#headingLine {
+    margin: 10px;
+}
+
+.headingMessaageAnimation {
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
+}
+
+.centerContent {
+    text-align: center;
+}
+
+img {
+    height: 350px;
+    width: 350px;
+}
+
+.fira-sans-condensed-regular {
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
